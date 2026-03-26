@@ -31,7 +31,7 @@ def train_digit_model():
                   metrics=['accuracy'])
 
     print("Starting training (20 epochs)...")
-    history = model.fit(x_train, y_train, epochs=5, 
+    history = model.fit(x_train, y_train, epochs=20, 
                         validation_data=(x_test, y_test))
 
     # Evaluate the model
