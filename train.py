@@ -30,7 +30,7 @@ def train_digit_model():
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
 
-    print("Starting training (5 epochs)...")
+    print("Starting training (20 epochs)...")
     history = model.fit(x_train, y_train, epochs=5, 
                         validation_data=(x_test, y_test))
 
